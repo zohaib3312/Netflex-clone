@@ -1,0 +1,81 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+
+body {
+
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.6) 0%,
+            rgba(0, 0, 0, 0.4)30%,
+            rgba(0, 0, 0, 0.8) 100%),
+        url('../images/PK-en-20260216-TRIFECTA-perspective_ff0205ae-1ee5-4136-be37-a061ba0d07b4_large.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+    
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 120px;
+}
+
+
+
+.red-btn a {
+    background-color: #e50914;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+
+.hero-content {
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+
+}
+
+input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+.input-btn a {
+    background-color: #e50914;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
