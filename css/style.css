@@ -1,4 +1,4 @@
-* {
+/* * {
     font-family: 'Inter', sans-serif;
 }
 
@@ -7,6 +7,7 @@ body {
 
     margin: 0;
     padding: 0;
+    background: #141414;
 }
 
 .hero {
@@ -19,6 +20,8 @@ body {
     background-position: center;
     position: relative;
     min-height: 100vh;
+    padding-bottom: 90px;
+
 
 
 }
@@ -82,29 +85,33 @@ input[type="email"] {
 }
 
 
+
+
+
 .curve-wrapper {
     box-sizing: border-box;
-    overflow-x: hidden;
-    position: relative;
-    height: 90px;
-    z-index: 1;
-    bottom: 100px;
     overflow: hidden;
+    position: relative;
+    height: 150px;
+    z-index: 2;
+    margin-top: -100px;
 }
+
 
 .curve-inner {
     width: 130%;
     left: -15%;
     position: absolute;
-    height: 100vh;
+    top: 30px;
+    height: 200%;
     border-radius: 50%;
     background: #141414;
 }
 
+
 .curve-inner::before {
     content: '';
     position: absolute;
-    
     top: 0;
     right: 0;
     bottom: 0;
@@ -112,17 +119,242 @@ input[type="email"] {
     z-index: -1;
     margin-top: -4px;
     border-radius: inherit;
-    background: linear-gradient(to right, 
-        rgba(33, 13, 22, 1) 16%, 
-        rgba(184, 40, 105, 1), 
-        rgba(229, 9, 20, 1), 
-        rgba(184, 40, 105, 1), 
-        rgba(33, 13, 22, 1) 84%);
+    background: linear-gradient(to right,
+            rgba(33, 13, 22, 1) 16%,
+            rgba(184, 40, 105, 1),
+            rgba(229, 9, 20, 1),
+            rgba(184, 40, 105, 1),
+            rgba(33, 13, 22, 1) 84%);
 }
- 
+
+.title h1 {
+    color: white;
+    margin-top: 10px;
+    margin-left: 120px;
+    font-size: 1.5em;
+    ;
+}
+
+
+.card-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 120px;
+    margin-top: 30px;
+}
+
+.card-row img {
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card-row img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
 
  
+.card {
+    position: relative;
+}
 
- 
+.card span {
+    position: absolute;
+    bottom: -10px;
+    left: -20px;
+    font-size: 8rem;
+    font-weight: 900;
+    color: rgb(3, 3, 3);
+    -webkit-text-stroke: 3px white;
+    line-height: 1;
+}
 
- 
+
+  */
+
+
+
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #141414;
+    overflow-x: hidden;
+}
+
+.logo img {
+    width: 120px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+.hero {
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.6) 0%,
+            rgba(0, 0, 0, 0.4) 30%,
+            rgba(0, 0, 0, 0.8) 100%),
+        url('../images/PK-en-20260216-TRIFECTA-perspective_ff0205ae-1ee5-4136-be37-a061ba0d07b4_large.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-content {
+    color: white;
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    margin-bottom: 30px;
+}
+
+.hero-content h3 {
+    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.input-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+input[type="email"] {
+    padding: 20px;
+    width: clamp(200px, 40%, 400px);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-btn a {
+    background-color: #e50914;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.red-btn a {
+    background-color: #e50914;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+ .curve-wrapper {
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    height: 100px;
+    z-index: 2;
+    margin-top: -80px;
+
+ }
+.curve-inner {
+    width: 130%;
+    left: -15%;
+    position: absolute;
+    top: 30px;
+    height: 200%;
+    border-radius: 50%;
+    background: #141414;
+}
+
+.curve-inner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin-top: -4px;
+    border-radius: inherit;
+    background: linear-gradient(to right,
+            rgba(33, 13, 22, 1) 16%,
+            rgba(184, 40, 105, 1),
+            rgba(229, 9, 20, 1),
+            rgba(184, 40, 105, 1),
+            rgba(33, 13, 22, 1) 84%);
+}
+
+.title h1 {
+    color: white;
+    margin: 10px 0 0 5%;
+    font-size: 1.5em;
+}
+
+.card-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    padding: 30px 5%;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.card-row::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+
+    position: relative;
+    flex: 0 0 auto;
+    margin-left: 15px;
+}
+
+.card img {
+    width: clamp(120px, 15vw, 220px);
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.card span {
+    position: absolute;
+    bottom: -10px;
+    left: -15px;
+    font-size: clamp(3rem, 6vw, 8rem);
+    font-weight: 900;
+    color: rgb(3, 3, 3);
+    -webkit-text-stroke: 3px white;
+    line-height: 1;
+}
