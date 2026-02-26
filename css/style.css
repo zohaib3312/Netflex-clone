@@ -7,7 +7,7 @@
 
 body {
     background: #141414;
-    overflow-x: hidden;
+    
 }
 
 .logo img {
@@ -18,7 +18,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
+    padding: 20px 10%;
 }
 
 .hero {
@@ -250,3 +250,6 @@ input[type="email"] {
 .faq-title {
     margin-top: 50px;
 }
+
+
+
