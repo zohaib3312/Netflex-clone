@@ -7,7 +7,7 @@
 
 body {
     background: #141414;
-    
+
 }
 
 .logo img {
@@ -71,26 +71,26 @@ nav {
 }
 
 input[type="email"] {
-  
 
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  color: white;
-  padding: 20px;
-  border-radius: 4px;
-  width: clamp(200px, 50%, 400px);
+
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 4px;
+    width: clamp(200px, 50%, 400px);
 
 }
 
 
-input::placeholder{
-     color: white;
+input::placeholder {
+    color: white;
 }
 
 
 input:focus {
-  outline: none;
-  color: white;
+    outline: none;
+    color: white;
 }
 
 .input-btn a {
@@ -159,9 +159,11 @@ input:focus {
     display: flex;
     align-items: flex-end;
     gap: 15px;
-    padding: 30px 5%;
+    padding: 30px ;
     overflow-x: auto;
     scrollbar-width: none;
+    margin: 25px 5%;
+
 }
 
 .card-row::-webkit-scrollbar {
@@ -203,6 +205,9 @@ input:focus {
     margin-top: 50px;
 }
 
+.reason-section {
+    margin: 0 5%;
+}
 
 .col-container {
     display: grid;
@@ -242,13 +247,14 @@ input:focus {
 
 .faq-section {
     padding: 20px 5%;
-    margin-top: 10px;
+    margin: 25px 5%;
 }
 
 .faq-section h2 {
     color: white;
     font-size: 20px;
     font-weight: lighter;
+
 
 
 }
@@ -265,8 +271,54 @@ input:focus {
 }
 
 .faq-title {
-    margin-top: 50px;
+    margin: 20px 5%;
 }
 
 
 
+.membership-bar h3 {
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.membership-bar .input-btn input {
+    width: 40%;
+
+}
+
+footer>li {
+    margin: 80px 5%;
+    list-style-type: none;
+
+}
+
+footer {
+    margin: 0 5%;
+}
+
+footer>li a {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: lighter;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin: 80px 5%;
+}
+
+.footer-container li {
+    list-style-type: none;
+    line-height: 40px;
+
+}
+
+.footer-container li a {
+
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: lighter;
+}
